@@ -1,0 +1,12 @@
+
+.container-fluid{
+    align-items: center;
+    color: hsl(0, 0%, 0%);
+    background-color: rgb(179, 110, 172);
+    border: 1px solid #770f0f;
+    padding: 20px;
+}
+
+.button{
+    color: #effd24;
+}

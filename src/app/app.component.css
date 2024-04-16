@@ -1,0 +1,7 @@
+.app-barra-navegacion {
+    height: 10vh; /* Ajusta este valor según la altura de tu barra de navegación */
+  }
+  
+  .router-outlet {
+    margin-top: 90vh; /* Ajusta este valor según la altura de la barra de navegación */
+  }

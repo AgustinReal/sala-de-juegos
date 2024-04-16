@@ -1,0 +1,68 @@
+<form [formGroup]="formularioIngreso" (ngSubmit)="Ingreso()" >
+
+  <div class="container-fluid">
+   
+    <h1>Iniciar Sesion</h1>
+    
+    <br/>
+    <label for="emailHtml">Correo</label>
+    <br/>
+    <input formControlName="emailControl" type="email" id="emailHtml">
+    <small *ngIf="formularioIngreso.controls['emailControl'].errors?.['required'] &&
+          formularioIngreso.controls['emailControl'].touched" class="invalid">El email es requerido
+    </small>
+    <small *ngIf="formularioIngreso.controls['emailControl'].errors?.['emailControl'] &&
+          formularioIngreso.controls['emailControl'].touched" class="invalid">
+              Formato de mail incorrecto
+            </small>
+    <br/>
+    <br/>
+    <label for="claveHtml">Clave</label>
+    <br/>
+    <input formControlName="claveControl" type="password" id="claveHtml">
+    <small *ngIf="formularioIngreso.controls['claveControl'].errors?.['minlength'] &&
+          formularioIngreso.controls['claveControl'].touched" class="invalid">
+              Minimo 6 letras
+            </small>
+    <small *ngIf="formularioIngreso.controls['claveControl'].errors?.['required'] &&
+        formularioIngreso.controls['claveControl'].touched" class="invalid">Contraseña es requerido
+    </small>
+    <br/>
+    <br/>
+    <input formControlName="claveConfirmacionControl"  type="password">
+    <small *ngIf="formularioIngreso.controls['claveConfirmacionControl'].errors?.['minlength'] &&
+          formularioIngreso.controls['claveConfirmacionControl'].touched" class="invalid">
+              Minimo 6 letras
+            </small>
+    <small *ngIf="formularioIngreso.controls['claveConfirmacionControl'].errors?.['required'] &&
+        formularioIngreso.controls['claveConfirmacionControl'].touched" class="invalid">Contraseña es requerido
+    </small>
+    <br/>
+    <button [disabled]="this.formularioIngreso.invalid">Verificar</button>
+    <br/>
+    <br/>
+    <div class="d-flex gap-5 justify-content-center">
+        <div (click)="accesoRapido('Agustin')" class="card" style="width: 4rem;">
+          <img src="https://avatars.githubusercontent.com/u/86836950?v=4" class="card-img-top" alt="...">
+          <div class="card-body bg-primary bg-opacity-50">
+            <h5 class="card-title fw-bold">Cuenta Agustin</h5>
+          </div>
+        </div>
+        <div (click)="accesoRapido('administrador')" class="card" style="width: 8rem;">
+          <img src="https://avatars.githubusercontent.com/u/86836950?v=4" class="card-img-top" alt="...">
+          <div class="card-body bg-primary bg-opacity-50">
+            <h5 class="card-title fw-bold">Cuenta Administrador</h5>
+          </div>
+        </div>
+        <div (click)="accesoRapido('cliente')" class="card" style="width: 8rem;">
+          <img src='https://avatars.githubusercontent.com/u/86836950?v=4' class="card-img-top" alt="...">
+          <div class="card-body bg-primary bg-opacity-50">
+            <h5 class="card-title fw-bold">Cuenta Cliente</h5>
+          </div>
+        </div>
+    </div>
+  </div>  
+
+</form>
+
+

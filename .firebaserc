@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tpsaladejuegos-26ee8": {
+      "hosting": {
+        "TpSalaDeJuegos": [
+          "tpsaladejuegos-26ee8"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tpsaladejuegos-26ee8"
+  }
+}
