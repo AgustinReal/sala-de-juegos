@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Fondo de pantalla */
+.Pantalla
+{
+    background-image: url("../../../assets/imagenes/imagenesRegistro/dragonBall.gif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+} 
+
+/* Titulo */
+h1
+{
+    margin-top: 30px;
+    font-size: 120px;
+    color: rgb(4, 15, 219);
+    font-family: 'Permanent Marker', cursive;
+}
+
+.boton
+{
+    background-color: rgb(4, 15, 219);
+    width: 150px;
+    height: 50px; 
+}
+
+.ingreso
+{
+    width: 170px;
+    height: 30px;
+    
+}
+
+.btn-dark{
+    min-height: 17vh;
+    min-width: 7vw;
+    background-color: #000000;
+}
+
+.foto{
+    height: 120px;
+    width: 100px;
+} 
+
+/* Boton ojo cerrado/abierto */
+
+.ojo{
+    height: 21px;
+    width: 21px;
+}
+
+.BottonOjoAbiertoCerrado{
+    height: 30px;
+    width: 35px;
+    background-color: rgb(4, 15, 219);
+}
+
+/* Labels */
+.letrasLabel
+{
+    font-size: 22px;
+    color: rgb(4, 15, 219);
+    font-family: 'Permanent Marker', cursive;
+}

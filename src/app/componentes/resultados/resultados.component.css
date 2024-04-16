@@ -1,0 +1,37 @@
+.Pantalla
+{
+    background-image: url("../../../assets/imagenes/juegos/fondoGamerTabla.gif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+}
+
+.tablita{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  /* margin: 0 auto; */
+}
+
+ .tablet {
+    max-height: 550px;
+    overflow-y: auto; 
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-radius: 30px;
+    opacity: 0.95;
+    box-shadow: 0 0 16px #ff2d38;
+    width: 600px;
+} 
+
+.boton{
+    min-height: 6vh;
+    min-width: 3vw;
+    background-color: #ff0364;
+    border-radius: 20px;
+    color: azure;
+    box-shadow: 0 0 16px #ff2d38;
+
+}

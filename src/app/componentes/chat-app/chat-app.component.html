@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-center Pantalla">
+    <div class="card text-center contenedor-carta view-from-right">
+        <div class="card-header">CHAT
+        </div>
+        <div class="barra">
+          <div *ngFor="let mensaje of array" class="mensajes">
+            <div class="chatPersonal" *ngIf="firebase.correoLogueado == mensaje.email">
+              <p class="nombreYo">Tú</p>
+              <p>{{mensaje.mensaje}}</p>
+              <p class="fechaYo">{{mensaje.fecha}}</p>
+            </div>
+            <div class="chatInvitado" *ngIf="firebase.correoLogueado != mensaje.email">
+              <p class="nombreInvitado">{{mensaje.nombre}}</p>
+              <p>{{mensaje.mensaje}}</p>
+              <p class="fecha">{{mensaje.fecha}}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="d-flex justify-content-center">
+            <input class="IngresoTexto " type="text" [(ngModel)]="mensajeNuevo" >
+            <button class="btn btn-dark BtnEnviar" (click)="EnviarMensaje()" >
+              <img src="../../../assets/imagenes/imagenesChat/flecha.png" alt="">
+            </button>
+        </div>
+    </div>
+</div>

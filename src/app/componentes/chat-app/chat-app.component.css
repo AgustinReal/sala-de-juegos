@@ -1,0 +1,94 @@
+.Pantalla{
+    background-image: url("../../../assets/imagenes/imagenesChat/cyberpunk.gif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+}
+
+.contenedor-carta
+{
+    width: 55%;
+    height: 75%;
+    background-color: #e7de25;
+    color: #060505;
+    font-weight: bolder;
+}
+
+.barra{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+     background-image: url("../../../assets/imagenes/imagenesChat/hyperx-keyboard.gif"); 
+    height: 70vh; /* Establece la altura máxima del contenedor */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */ 
+}
+
+.margenPerfil{
+    background-color: #2041E5;
+    height: 10%;
+    width: 50%;
+    color: rgb(245, 245, 245);
+}
+
+.chatPersonal{
+    background-color: rgba(41, 15, 205, 0.8);
+    border-radius: 10px;
+    
+}
+
+.chatInvitado{
+    background-color: rgba(17, 195, 70, 0.8);
+    border-radius: 10px;
+}
+
+.fecha{
+    text-align: right;
+}
+
+.chatPersonal
+{
+    width: 50%;
+    margin-left: auto;
+}
+
+.chatInvitado{
+    width: 50%;
+
+}
+
+.nombreInvitado{
+    text-align: left;
+
+}
+
+.nombreYo{
+    text-align: right;
+}
+
+.fechaYo
+{
+    text-align: left;
+}
+
+input{
+    width: 835px;
+    height: 48px;
+}
+
+.contenedor-mensajes{
+    overflow: scroll;
+    padding: 0.3rem;
+
+}
+
+.contenedor-mensajes::-webkit-scrollbar {
+    display: none;
+  }
+
+.BtnEnviar
+{
+    width: 117px;
+    height: 50px;
+}
+

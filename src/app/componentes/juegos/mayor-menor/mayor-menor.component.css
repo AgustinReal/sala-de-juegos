@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+.mayormenor-container {
+    font-family: "Poppins", sans-serif;
+    background-image: url("../../../../assets/imagenes/juegos/mayorMenor/animated.gif"); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100%;
+    min-width: 100vw;
+    font-family: 'Black Ops One', cursive;
+  }
+  
+  .tituloMayorMenor 
+  {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(18, 255, 5, 0.7);
+    padding: 5px 15px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .puntuacion {
+    text-align: center;
+    color: #00d9ff;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+  }
+  
+  .intentos {
+    color: #00d9ff;
+    margin-left: 8rem;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+  }
+  
+  .row {
+    margin: 1rem auto;
+  }
+  
+  .carta-izquierda 
+  {
+    width: 13rem;
+    margin-right: 17px;
+    box-shadow: 0 0 20px #0bb0d1;
+  }
+  
+  .carta-derecha {
+    width: 13rem;
+    margin-left: 17px;
+    box-shadow: 0 0 20px #0bb0d1;
+  }
+  
+  .btn-mayormenor {
+    display: block;
+    margin: 0.5rem auto;
+  }
+  
+  
+  .btn-menor {
+    padding: 1.3em 15em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: #0e06e7;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+  }
+  
+  
+  .btn-mayor 
+  {
+    padding: 1.3em 15em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: #c4280c;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+  }
+
+  .btnReiniciar { 
+    padding: 1.3em 8em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(255, 253, 253);
+    background-color: rgb(24, 224, 6);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(22, 194, 213, 0.8);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  .btn-comenzar-reiniciar:hover {
+    background-color: #6716c4;
+    box-shadow: 0px 15px 20px rgba(245, 2, 253, 0.4);
+    color: rgb(255, 255, 255);
+    transform: translateY(-7px);
+  }
+  
+  .btn-comenzar-reiniciar {
+    transform: translateY(-1px);
+  }

@@ -1,0 +1,28 @@
+<section class="mayormenor-container">
+  <div class="container d-flex flex-column justify-content-center">
+    <h1 class="tituloMayorMenor">MAYOR MENOR</h1>
+    <p class="puntuacion">Puntuación: {{ cantidadDePuntos }}</p>
+    <p class="puntuacion">Intentos: {{ intentos }}/5</p>
+    <p class="juego-terminado" *ngIf="termino">{{ mensajePerdio }}</p> 
+    <div class="row">
+    <div class="col">
+      <img class="carta-izquierda" src="{{carta}}" alt="" />
+    </div>
+    <div class="col">
+      <img
+        class="carta-derecha" src="../../../../assets/imagenes/juegos/mayorMenor/mazoCartas.png" alt=""
+      />
+  </div>
+    </div>
+      <div *ngIf="!estaJugando">
+        <button class="btnReiniciar" (click)="Reiniciar()">{{ textoDelBotonJugar }}
+        </button>
+      </div>
+      <div class="btn-mayormenor" *ngIf="estaJugando">
+        <button class="btn-menor" (click)="Jugar('menor')">Menor</button>
+        <br/>
+        <br/>
+        <button class="btn-mayor" (click)="Jugar('mayor')">Mayor</button>
+      </div>
+  </div> 
+</section>

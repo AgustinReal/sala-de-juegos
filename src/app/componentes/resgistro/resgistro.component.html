@@ -1,0 +1,56 @@
+<div class="d-flex flex-column Pantalla">
+    
+    <br/>
+    <div class="d-flex justify-content-center" >
+    <h1 class="letrasIniciarSesion">Registro</h1>
+    </div>
+    <br/> 
+
+    <br/>   
+    <br/>     
+    <div class="d-flex justify-content-center" >
+        <br/>
+        <label for="correo" class="letrasLabel m-2">Correo</label>
+        <br/>            
+        <input class="ingreso"  type="text" [(ngModel)]="correoTxt" id="correo" [ngModelOptions]="{standalone: true}" required>
+        <br/> 
+        <label for="nombre" class="letrasLabel m-2">Nombre</label>
+        <br/>            
+        <input class="ingreso"  type="text" [(ngModel)]="nombreTxt" id="nombre" [ngModelOptions]="{standalone: true}" required>
+    </div>
+    
+    <br/> 
+    <br/> 
+    <br/>   
+    <div class="d-flex justify-content-center" >
+        <br/>    
+        <label for="password" class="letrasLabel m-1">Contraseña</label>
+        <input class="ingreso" type="{{ esTexto ? 'text' : 'password' }}" id="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}"/>
+        
+        <button class="BottonOjoAbiertoCerrado" (click)="togglePasswordVisibility()">
+            <img [src]="imagenOjo" class="ojo" alt="">
+        </button>
+    </div>  
+
+    <br/> 
+    <br/> 
+    <br/>   
+    <div class="d-flex justify-content-center" >
+        <br/>    
+        <label for="password" class="letrasLabel m-1">Confirmar Contraseña</label>
+        <input class="ingreso" type="{{ esTexto ? 'text' : 'password' }}" id="confirmPassword" [(ngModel)]="confirmPassword" [ngModelOptions]="{standalone: true}"/>
+        
+        <button class="BottonOjoAbiertoCerrado" (click)="togglePasswordVisibility()">
+            <img [src]="imagenOjo" class="ojo" alt="">
+        </button>
+    </div> 
+ 
+    <br/>
+    <br/>
+    <div class="d-flex justify-content-center" >
+        <button type="button" (click)="Registro()" class="btn btn-outline-warning m-1  boton">Registrar</button>
+
+        <button type="button" (click)="LimpiarCampos()" class="btn btn-outline-warning m-1 boton">Limpiar</button>
+    </div>
+
+</div>

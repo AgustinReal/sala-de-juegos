@@ -1,0 +1,59 @@
+<section class="ahorcado-container">
+<div class="container juego-contenedor">
+    <h1 class="titulo-ahorcado">AHORCADO</h1>
+    <p class="intentos">Intentos {{ intentosPosibles }}/7</p>
+    <div class="contenedor-general row">
+    <div class="col">
+        <div>
+        <img class="img-horca" src="../../../../assets/imagenes/juegos/ahorcado/ahorcadoGame/parte{{ imagenes }}.png" alt="horca"/>
+        </div>
+    </div>
+    <div class="col contenedor-botones">
+    <div class="row palabra-adivinar">
+    <div class="col-md-12 text-center">
+        <div *ngFor="let unGuio of guion" class="d-inline">
+        <h1 class="d-inline p-2 mt-5">{{ unGuio }}</h1>
+        </div>
+    </div>
+    <span class="puntaje">(Puntaje: {{ puntos }})</span>
+    </div>
+    </div>
+    <div class="containerletras col ">
+        <button  id="boton{{letrasBoton[0]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[0], 0)">{{ letrasBoton[0] }}</button>
+        <button  id="boton{{letrasBoton[1]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[1], 1)">{{ letrasBoton[1] }}</button>
+        <button  id="boton{{letrasBoton[2]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[2], 2)">{{ letrasBoton[2] }}</button>
+        <button  id="boton{{letrasBoton[3]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[3], 3)">{{ letrasBoton[3] }}</button>
+        <button  id="boton{{letrasBoton[4]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[4], 4)">{{ letrasBoton[4] }}</button>
+        <button  id="boton{{letrasBoton[5]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[5], 5)">{{ letrasBoton[5] }}</button>
+        <button  id="boton{{letrasBoton[6]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[6], 6)">{{ letrasBoton[6] }}</button>
+        <button  id="boton{{letrasBoton[7]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[7], 7)">{{ letrasBoton[7] }}</button>
+        <button  id="boton{{letrasBoton[8]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[8], 8)">{{ letrasBoton[8] }}</button>
+        <br/>
+        <button  id="boton{{letrasBoton[9]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[9], 9)">{{ letrasBoton[9] }}</button>
+        <button  id="boton{{letrasBoton[10]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[10], 10)">{{ letrasBoton[10] }}</button>
+        <button  id="boton{{letrasBoton[11]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[11], 11)">{{ letrasBoton[11] }}</button>
+        <button  id="boton{{letrasBoton[12]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[12], 12)">{{ letrasBoton[12] }}</button>
+        <button  id="boton{{letrasBoton[13]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[13], 13)">{{ letrasBoton[13] }}</button>
+        <button  id="boton{{letrasBoton[14]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[14], 14)">{{ letrasBoton[14] }}</button>
+        <button  id="boton{{letrasBoton[15]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[15], 15)">{{ letrasBoton[15] }}</button>
+        <button  id="boton{{letrasBoton[16]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[16], 16)">{{ letrasBoton[16] }}</button>
+        <br/>
+        <button  id="boton{{letrasBoton[17]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[17], 17)">{{ letrasBoton[17] }}</button>
+        <button  id="boton{{letrasBoton[18]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[18], 18)">{{ letrasBoton[18] }}</button>
+        <button  id="boton{{letrasBoton[19]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[19], 19)">{{ letrasBoton[19] }}</button>
+        <button  id="boton{{letrasBoton[20]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[20], 20)">{{ letrasBoton[20] }}</button>
+        <button  id="boton{{letrasBoton[21]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[21], 21)">{{ letrasBoton[21] }}</button>
+        <button  id="boton{{letrasBoton[22]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[22], 22)">{{ letrasBoton[22] }}</button>
+        <button  id="boton{{letrasBoton[23]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[23], 23)">{{ letrasBoton[23] }}</button>
+        <button  id="boton{{letrasBoton[24]}}" class="btn-letra" (click)="ElegirLetra(letrasBoton[24], 24)">{{ letrasBoton[24] }}</button>
+    </div>
+    <div >
+        <button class="btn-reiniciar" (click)="AyudarAlUsuario()">
+            Ayuda</button>
+    <button class="btn-reiniciar" (click)="Reiniciar()">
+    REINICIAR JUEGO
+    </button>
+    </div>
+    </div>
+</div>
+</section>

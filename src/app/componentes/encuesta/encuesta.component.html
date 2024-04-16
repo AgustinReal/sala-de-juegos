@@ -1,0 +1,178 @@
+
+
+<form action="#" [formGroup]="formularioEncuesta">
+    <h4 class="" style="text-align: center; font-size: 50px;">ENCUESTA</h4>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="datosEncuesta" style="width: 100vw;">
+            <div class="" style="width: 40%;">
+                <div class="col-sm-12">
+                    <label for="nombreTxt" class="form-label">Nombre</label>
+                    <input formControlName="nombreTxt" type="text" class="form-control" id="nombreTxt"
+                        placeholder="Ingrese su codigo" value="" required="">
+
+                    <span
+                        *ngIf="formularioEncuesta.controls['nombreTxt'].errors?.['required'] && formularioEncuesta.controls['nombreTxt'].touched"
+                        class="text-danger">El nombre es obligatorio
+                    </span>
+                    <span *ngIf="formularioEncuesta.controls['nombreTxt'].errors?.['pattern']" class="text-danger">
+                        El nombre debe contener solo letras
+                    </span>
+                    <span
+                        *ngIf="formularioEncuesta.controls['nombreTxt'].errors?.['containsSpaces'] && formularioEncuesta.controls['nombreTxt'].touched"
+                        class="text-danger">El nombre no puede contener espacios vacios
+                    </span>
+                </div>
+
+                <br>
+                <div class="col-12">
+                    <label for="apellidoTxt" class="form-label">Apellido</label>
+                    <input formControlName="apellidoTxt" type="text" class="form-control" id="apellidoTxt"
+                        placeholder="Ingrese el color" value="" required="">
+                    <span
+                        *ngIf="formularioEncuesta.controls['apellidoTxt'].errors?.['required'] && formularioEncuesta.controls['apellidoTxt'].touched"
+                        class="text-danger">La descripcion es obligatorio
+                    </span>
+                    <span *ngIf="formularioEncuesta.controls['apellidoTxt'].errors?.['pattern']" class="text-danger">
+                        La descripcion debe contener solo letras
+                    </span>
+                    <span
+                        *ngIf="formularioEncuesta.controls['apellidoTxt'].errors?.['containsSpaces'] && formularioEncuesta.controls['apellidoTxt'].touched"
+                        class="text-danger">La descripcion no puede contener espacios vacios
+                    </span>
+                </div>
+
+                <div class="col-12">
+                    <label for="edadTxt" class="form-label">Edad</label>
+                    <input formControlName="edadTxt" type="text" class="form-control" id="edadTxt"
+                        placeholder="Ingrese el stock" value="" required="">
+
+                    <span
+                        *ngIf="formularioEncuesta.controls['edadTxt'].errors?.['required'] && formularioEncuesta.controls['edadTxt'].touched"
+                        class="text-danger">La edad es obligatorio</span>
+                    <span
+                        *ngIf="formularioEncuesta.controls['edadTxt'].errors?.['containsSpaces'] && formularioEncuesta.controls['edadTxt'].touched"
+                        class="text-danger">La edad no puede contener espacios vacios</span>
+                    <span
+                        *ngIf="formularioEncuesta.controls['edadTxt'].errors?.['min'] && formularioEncuesta.controls['edadTxt'].touched"
+                        class="text-danger">La edad mínima es 18
+                    </span>
+                    <span
+                        *ngIf="formularioEncuesta.controls['edadTxt'].errors?.['max'] && formularioEncuesta.controls['edadTxt'].touched"
+                        class="text-danger">La edad maxima es 99
+                    </span>
+                    <span *ngIf="formularioEncuesta.controls['edadTxt'].errors?.['pattern']" class="text-danger">
+                        La edad debe contener solo numeros</span>
+                </div>
+
+                <div class="col-12">
+                    <label for="telefonoTxt" class="form-label">Telefono</label>
+                    <input formControlName="telefonoTxt" type="text" class="form-control" id="telefonoTxt"
+                        placeholder="Ingrese su número de telefono" value="" required="">
+                    <span
+                        *ngIf="formularioEncuesta.controls['telefonoTxt'].errors?.['required'] && formularioEncuesta.controls['telefonoTxt'].touched"
+                        class="text-danger">El teléfono es obligatorio</span>
+                    <span
+                        *ngIf="formularioEncuesta.controls['telefonoTxt'].errors?.['containsSpaces'] && formularioEncuesta.controls['telefonoTxt'].touched"
+                        class="text-danger">El teléfono no puede contener espacios vacios</span>
+                    <span
+                        *ngIf="formularioEncuesta.controls['telefonoTxt'].errors?.['maxlength'] && formularioEncuesta.controls['telefonoTxt'].touched"
+                        class="text-danger">El maximo de caracteres es 10</span>
+                    <span *ngIf="formularioEncuesta.controls['telefonoTxt'].errors?.['pattern']" class="text-danger">
+                        El telefono debe contener solo numeros</span>
+                </div>
+            </div>
+
+            <div class="" style="width: 40%;">
+                <div class="col">
+                    <label for="calificacion" class="form-label">Calificación App</label>
+                    <input formControlName="calificacion" type="text" readonly class="form-control" id="calificacion"
+                        placeholder="Seleccionar" value="" required="">
+                    <br>
+                    <div>
+                        <button type="button" (click)="IndicarCalificacion('1')" class="btn-dark m-2">
+                            <img src="../../../assets/imagenes/encuesta/calificacion1.png"
+                                style="height: 50px; width: 70px;" alt="">
+                        </button>
+                        <button type="button" (click)="IndicarCalificacion('2')" class="btn-dark m-2">
+                            <img src="../../../assets/imagenes/encuesta/calificacion2.png"
+                                style="height: 50px; width: 70px;" alt="">
+                        </button>
+                        <button type="button" (click)="IndicarCalificacion('3')" class="btn-dark m-2">
+                            <img src="../../../assets/imagenes/encuesta/calificacion3.png"
+                                style="height: 50px; width: 70px;" alt="">
+                        </button>
+                        <button type="button" (click)="IndicarCalificacion('4')" class="btn-dark m-2">
+                            <img src="../../../assets/imagenes/encuesta/calificacion4.png"
+                                style="height: 50px; width: 70px;" alt="">
+                        </button>
+                        <button type="button" (click)="IndicarCalificacion('5')" class="btn-dark m-2">
+                            <img src="../../../assets/imagenes/encuesta/calificacion5.png"
+                                style="height: 50px; width: 70px;" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <label for="btncheck1">El juego con mayor dificultad</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="juegos" id="flexRadioDefault1"
+                            value="ahorcado">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            AHORCADO
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="juegos" id="flexRadioDefault1"
+                            value="mayorMenor">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            MAYOR O MENOR
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="juegos" id="flexRadioDefault1"
+                            value="preguntados">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            PREGUNTADOS
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="juegos" id="flexRadioDefault2" checked
+                            value="viborita">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            VIBORITA
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <label for="comentarioTxt" class="form-label">Comentarios para mejorar la App</label>
+                    <input formControlName="comentarioTxt" type="text" class="form-control" id="comentarioTxt"
+                        placeholder="Ingrese su comentario" value="" required="">
+
+                    <span
+                        *ngIf="formularioEncuesta.controls['comentarioTxt'].errors?.['required'] && formularioEncuesta.controls['comentarioTxt'].touched"
+                        class="text-danger">El comentario es obligatorio
+                    </span>
+                    <span *ngIf="formularioEncuesta.controls['comentarioTxt'].errors?.['pattern']" class="text-danger">
+                        El comentario debe contener solo letras
+                    </span>
+                    <span
+                        *ngIf="formularioEncuesta.controls['comentarioTxt'].errors?.['containsSpaces'] && formularioEncuesta.controls['comentarioTxt'].touched"
+                        class="text-danger">El comentario no puede contener espacios vacios
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <button type="button" [disabled]="this.formularioEncuesta.invalid" (click)=" enviarEncuesta()"
+                class="btn-dark" style="background-color: aquamarine; color: black; height: 50px; width: 150px; border-radius: 30px;">Agregar</button>
+        </div>
+    </form>
